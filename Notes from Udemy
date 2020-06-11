@@ -154,3 +154,13 @@ img {
   border-width: 5;
 }
 
+Fonts: use Google Fonts
+
+
+Box Model
+all elements
+Content:
+Padding: - space between content and border
+Border:
+Margin: - space between border and anything else
+

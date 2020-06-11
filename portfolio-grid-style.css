@@ -1,0 +1,24 @@
+h1 {
+	font-family: 'Noto Sans HK', sans-serif;
+	text-transform: uppercase;
+	border-bottom: 3px solid rgba(10, 10, 10, .8);
+	margin-right: 85%;
+}
+
+td {
+	padding: 2%;
+}
+
+table {
+	width: 100%;
+	height: auto;
+}
+
+table {
+	margin: auto;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
