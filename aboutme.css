@@ -1,0 +1,42 @@
+/*  Colors in Hexadecimal */
+
+h1 {
+	color:  #000001;
+}
+
+li   {
+	color: #4B0082;
+}
+
+h4 {
+	color: #FF1493;
+}
+
+/* First two characters _ _ represent Red, F F  is the highest. 0 0 is the lowest
+
+second two digits are green _ _ :
+
+final two are Blue _ _ */
+
+/* Adding up all colors is WHITE*/
+
+/* RGB channels, 0 is empty, 255 is max */
+
+h1 {
+	color: rgb(0,255,0);  /* Full green */
+	border: 8px solid rgb(40, 0 , 0);
+}
+
+/* RGBA with alpha */
+
+h3 {
+	color: rgb(0,255,0);  /* Full green */
+}
+
+body {
+	color: #FF00FF;
+
+	/*background: url("stack.overflow.png");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}

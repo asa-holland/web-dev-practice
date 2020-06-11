@@ -1,0 +1,16 @@
+body {
+	background: orange;
+}
+
+li {
+	border: 2px solid red;
+}
+
+#option2 {
+	color: #880099;
+}
+
+.primary {
+	border: 2px dashed #000000;
+	text-decoration: line-through;
+}

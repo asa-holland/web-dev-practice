@@ -1,0 +1,156 @@
+Notes from Udemy
+
+Restaurant analogy - order food (browser asking for http request), sends to kitchen (server, database, backend), breaks up a meal and sends packets back as  fast as possible, bouncing around it in any order to be html css and  javascript that are viewed client side on a browser as a website
+
+HTML: hypertext markup lanugage
+Defines the structure of a webpage
+ - puts an image here
+ - put a form here
+ The nouns of a webpage
+ Structural skeleton
+
+ CSS is the style of a page
+  THe cascading style sheets
+  not mandated (unlike html)
+  give bullet points
+  the adjectives - the skin of html
+  Skin on the website
+
+ JavaScript - adds logic and interactivity to a page
+ loads math, changes color
+ actions, the verbs on a webpage
+ just the actions, function
+
+ HTML
+ Hyper Text markup language
+ structure and skeleton
+ Write simple html documents
+  understand the difference between closing and self closing tags
+  write tags with attributes
+  use MDN as a reference
+  given an image, write the corresponding html
+
+HTML lets us  specify the texts - allows us to create hyperlink
+html was custom code - Myspace
+
+<tagName> Some content </tagName>
+
+MDN
+Mozilla Developer Newtork
+<p class="nice">Hello world!</p>
+an attribute and its value
+enclosed text content is Hello world!
+
+Sublime text - html and hit tab
+control slash - comments
+type tag name and then Tab to autocomplete the tag
+type lorem and hit Tab for sample text
+CTRL SHIFT D on selected text will duplicate
+Hold ctrl and click to get multiple cursors
+
+Doctype - sets html 5 as the current html
+html - root element, all other elements must be descendents of this element (provides general info / metadata about links to the CSS and JS files.
+	one head element
+	one body element - body represents the content of the document
+
+h1 to h6
+headings 
+
+p tag - paragraphs
+
+<em> italisize emphasis
+<strong> - bold 
+
+Ordered Lists - <ol> - ordered lists
+Unorderd Lists <ul> - unorded lists, bullet points
+
+Not too useful until we start styling elements
+div - a generic container - a  way to group elements together, for example group a header and a text block together in order to style things the same way - BLOCK LEVEL element: puts this item on its own line
+span - generic container but an INLINE container, not BLOCK LEVEL but can still format the text specifically
+
+img TAB src = source of the image, can be an hhtp address or it can be a file in the same folder
+
+Attributes
+addings additional information to tags
+key="value"
+
+<img src=''
+
+Types of URLS
+Relative path - Relative to where I am, keep everything the same and add the new link to the end
+Go to another location - 
+
+Pages linked together using A tags - Portfolio
+
+URL use case with HTTP to link to Github
+
+More html tags
+Tables
+<thead>: header of a table (HTML5 upgrade of <th>)
+<tbody>: contains the body of a table (required for rows)
+<tr>: row of a table
+<td>: data value inside a row inside the body of a table
+
+Table Structure
+
+<thead>
+  <td>Title of Column 1<td>
+  <td>Title of Column 2<td>
+</thead>
+<tbody>
+  <tr>
+    <td>Data of 1st Row Column 1<td>
+    <td>Data of 1st Row Column 2<td>
+  </tr>
+  <tr>
+    <td>Data of 2nd Row Column 1<td>
+    <td>Data of 2nd Row Column 2<td>
+  </tr>
+</tbody>
+
+Usually use CSS to add color, border, fonts etc
+
+Forms
+<form>: groups several items together into a form
+<input> type="" is set to text, password, radio, color, submit 
+    placeholder="" the text seen before input is inputted
+
+form has two main attributes: 
+  action: "the HTTP address you want to send or recieve to" "http://wikipedia.com"
+  method: "GET" or "POST"
+
+
+Presence validation - required elements
+Email - must follow email format
+
+# Checkbox can select or deselct multiple
+
+# Radio button:
+
+
+###########################################################################################
+CSS
+Cascading Style Sheets
+
+CSS  is  the asjectives
+make the headings color purple
+make the header this font size
+add borders
+
+wrtie this separately from hml
+The General Rule
+selector {
+    property: value;
+    anotherProperty: value;
+} 
+
+h1 {
+  color: purple;
+  font-size; 56px;
+}
+
+img {
+  border-color: red;
+  border-width: 5;
+}
+

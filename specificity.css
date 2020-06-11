@@ -1,0 +1,21 @@
+/*The li elements inherit the color purple from the ul parent element*/
+
+body {
+	color: green;
+}
+
+ul {
+	color: purple;
+}
+
+li {
+	color: blue;
+}
+
+.highlight {
+	background: yellow
+}
+
+#special {
+	color: pink;
+}

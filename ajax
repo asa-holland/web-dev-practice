@@ -1,0 +1,103 @@
+What is Ajax?
+
+Asynchronoisu JavaScript and XML
+Set of web technologyies
+Send and recieve data asynchronously
+
+Does not interfere with current web page
+JSON has replaced XML for the most part
+(javascript object notation)
+
+ 
+ The Client (You)  sends common requests and reponses to a Server.
+ The client can also send a Javascript call to an AJAX Engine, 
+ which sends an additional request known as an XMLHttpRequest to the Server.
+ Then the server sends an XML/JSON file back to the AJAX engine, which sends an HTML response back to the client.
+
+ The server can be an API
+
+ The server responds back with the HTML
+
+ AJAX  allows us to make the request without synchronizing the whole webpage. 
+ For example, if you wanted to update a small piece of text you can do it with AJAX without relaoding.
+
+ Making an AJAX call can be done with plain Javascript or with some other library (like JQuery or AXIOS)
+
+ This is usually returned in JSON (sometimes using XML or text)
+
+ the XmlHttpRequest (XHR) Object
+ this is the API in the form of an object
+ Provided by the browser's JS environment
+ Methods transfer data between client/serer
+ Can be used with other protocols than HTTP
+ Can work with other data than XML (JSON, plain text)
+
+ How  to Make an AJAX Call:
+ use one of these libraries (but learn how to do it in plain JS first)
+ jQUERY  (dom  manipulation library,  huge, lots can be done with it, NOT used for JUST jquery. Its overkill)
+ Axios (nice, slim libs for making HTTP requests, can make things a lot easier)
+ Superagent (nice, slim libs for making HTTP requests, can make things a lot easier)
+ Fetch API (part of the browser, pretty new, Firefox, Chrome. )
+ Prototype ()
+ Node HTTP (NodeJs, required NodeJS so that's an additional whole thing)
+
+
+
+ AJAX  requires a SERVER in addition to the html files
+
+ XAMPP provides an Apache Server eith a Maria  Database  with PHP includes mySQL and Perl
+ XAMPP is the most popular PHP  development environmnet
+Can get it from Apache Friends
+
+Making requests doesn't need PHP
+Could use LiveServer in VSCode
+
+In the XAMPP folder, create a new folder for the new AJAX build to be set up.
+Within that folder we will make lots of different folders
+
+He uses VSCode
+includes ! + Tab = basic HTML setup
+
+
+Ajax1.html
+
+Loading a plain text file
+on browser:  navigate to localhost/(folder name)/ajax1.html
+
+
+Adding a button that has an ID
+
+<script tag>
+
+// Create an event listener
+	document.getElementByID('button').addEventListener('click', loadText);
+
+	function loadText(){
+
+		//console.log ('button  clicked')
+		// Create a new XHR Object
+		var xhr = new XMLHttpRequest();
+
+		// OPEN - type (type of request), url/file (to receive), async=True or False
+		xhr.open('GET', 'sample.text', true)
+
+		xhr.onload = function(){
+		// Check for status of response:
+		if(this.status == 200){
+		// 200 is OKAY for servers
+			console.log(this.responseText);
+		}
+		} 
+
+		// Sends request
+		xhr.send();
+	}
+
+
+Loading a JSON
+
+Loading a PHP
+
+
+
+
